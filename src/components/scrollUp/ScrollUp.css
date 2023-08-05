@@ -1,0 +1,29 @@
+.scroll-up {
+    position: fixed;
+    bottom: 3rem;
+    right: 2rem;
+    margin: 1rem;
+    border-radius: 50%;
+    background-color: var(--container-color);
+    color: var(--accent-color);
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    transition: all 2s cubic-bezier(0.16, 1, 0.3, 1 );
+    z-index: 99999999;
+    
+}
+
+
+.scroll-up:hover {
+    transform: translateY(-2px);
+    background-color: var(--accent-color);
+    color: var(--container-color);
+    transition: all 2s cubic-bezier(0.16, 1, 0.3, 1 );
+}
+
+.home__scroll-up  {
+    font-size: 2rem;
+    font-weight: bolder;
+    padding: 12.8px;
+}
+

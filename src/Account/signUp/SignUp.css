@@ -1,0 +1,313 @@
+.signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    text-transform: lowercase;
+    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+    width: 150vw;
+    margin-right: 3.4rem;
+}
+
+.signup__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    gap: 4rem;
+    flex-direction: column;
+}
+
+.signup__page-left {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 1rem;
+    justify-content: center;
+}
+
+
+.section__title-signup {
+    font-size: var(--h1-font-size);
+    color: var(--title-color);
+    font-family: "Satoshi-Bold", sans-serif;
+    padding-top: 6rem;
+}
+
+.signup__page_top-content {
+    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.signup__page_top-content h3 {
+    font-size: 1.5rem;
+    color: var(--title-color);
+    margin-bottom: 1rem;
+}
+
+.signup__page_bottom-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.signup__bottom_content-item {
+    display: flex;
+    gap: 1rem;
+    align-items: first baseline;
+}
+
+.signup__bottom_content-item span {
+    font-family: "Satoshi-Bold", sans-serif;
+    color: var(--accent-color);
+}
+
+.signup__bottom_content-item h3 {
+    color: var(--text-color);
+    font-family: "Satoshi", sans-serif;
+}
+
+.signup__bottom_content-item i {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+}
+
+.signup__page-right {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 3rem;
+}
+
+.signup__page_top-image {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+
+
+.signup__page__top-images {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+
+
+.signup__page__top-images img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: relative;
+    margin-left: -1.25rem;
+    transition: margin-left 1s cubic-bezier(0.16, 1, 0.3, 1);
+    ;
+}
+
+
+.signup__page__top-images:hover img {
+    transition: margin-left 1s cubic-bezier(0.16, 1, 0.3, 1);
+    ;
+
+    margin-left: 0;
+}
+
+.signup__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+}
+
+.signup__user {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    justify-self: flex-start;
+    text-align: left;
+}
+
+.signup__form-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40vw;
+    padding: 2rem;
+    border: 1.5px solid var(--nav-overlay-color);
+    margin-top: 2rem;
+}
+
+.signup__input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+
+.signup__user input {
+    background: transparent;
+    border: 1px solid var(--title-color);
+    padding: 1rem;
+    color: var(--title-color);
+    width: 33.4vw;
+}
+
+.signup__user input:focus {
+    outline: 0.3px solid var(--accent-color);
+    background: var(--body-color);
+
+}
+
+.signup__user input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px var(--accent-color) inset;
+    -webkit-text-fill-color: var(--container-color);
+    border: 0.5px solid var(--text-color)
+}
+
+.signup__button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    color: var(--container-color);
+    gap: 1rem;
+}
+
+
+.signup__button button {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.4rem;
+    background-color: var(--nav-overlay-color);
+    color: var(--container-color);
+    padding: 0.95rem;
+    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+    width: 33.3vw;
+    text-transform: lowercase;
+}
+
+.social__logins_signups {
+    display: flex;
+    width: 36.4vw;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.signedup__btn {
+    display: flex;
+    width: 16vw;
+    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+    text-transform: lowercase;
+}
+
+.signup__button button h3 {
+    color: var(--container-color);
+}
+
+
+.signup__forgot {
+    font-size: var(--small-font-size);
+    display: flex;
+    color: var(--text-color);
+}
+
+.signup__button_google button {
+    background-color: var(--stack-accent-color);
+    color: var(--nav-overlay-color);
+    text-transform: lowercase;
+}
+
+.signup__button_google button h3 {
+    color: var(--nav-overlay-color);
+    text-transform: lowercase;
+}
+
+.signup__button button:hover {
+    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+    border-radius: 0;
+}
+
+.signup__button_facebook button {
+    background-color: #5d5deb;
+    color: var(--overlay-color);
+    text-transform: lowercase;
+}
+
+
+.policy__agree {
+    color: var(--text-color);
+    font-size: 0.9rem;
+
+}
+
+.age__country {
+    display: flex;
+    gap: 0.7rem;
+}
+
+.age__select {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.dropdown-icon {
+    position: absolute;
+    top: 75%;
+    left: 8.5rem;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: var(--title-color);
+    font-size: 0.8rem;
+}
+
+.dropdown-select {
+    appearance: none;
+    border: none;
+    background: transparent;
+    padding: 1.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.age__select select {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 0rem;
+    border: 1px solid var(--title-color);
+    background: transparent;
+    color: var(--title-color);
+    outline: none;
+    font-size: var(--normal-font-size);
+    transition: 0.3s ease;
+    width: 10.9vw;
+}
+
+.dropdown__country select {
+    width: 10vw;
+}
+
+.dropdown-icon-country {
+    position: absolute;
+    top: 75%;
+    left: 7rem;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: var(--title-color);
+    font-size: 1.2rem;
+}
