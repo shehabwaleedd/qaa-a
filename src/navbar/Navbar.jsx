@@ -8,7 +8,7 @@ import {IoMenuOutline} from 'react-icons/io5'
 const Navbar = () => {
     return (
         <nav className='navbar'>
-            <div className='navbar__container'>
+            <div className='navbar__container containered'>
                 <div className="navbar__left">
                     <img src={logo} alt="" />
                     <h1>VENUES</h1>
