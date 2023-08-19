@@ -43,9 +43,11 @@ const Navbar = () => {
                             <AnimatePresence mode='wait'>
                                 {accountOpen && (
                                     <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.2 }} className="nbr__account-dropdown" >
-                                        <ul>
+                                        <ul className='submenu__account-upper'>
                                             <li>Sign In</li>
                                             <li>Sign Up</li>
+                                        </ul>
+                                        <ul className='submenu__account-lower'>
                                             <li>Venue Your Place</li>
                                             <li>Help Center</li>
                                         </ul>

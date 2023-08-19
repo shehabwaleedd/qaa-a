@@ -162,7 +162,8 @@
                             width: 100%;
                             height: 100%;
                             position: relative;
-                            z-index: 100;
+                            font-weight: 400;
+                            font-family: 'Noto Sans KR', sans-serif;
                             li {
                                 display: flex;
                                 align-items: center;
@@ -172,12 +173,19 @@
                                 height: 100%;
                                 padding: 0 0.5rem;
                                 cursor: pointer;
-                                position: relative;
-                                z-index: 100;
+                                font-size: 0.9rem;
+                                font-weight: 400;
+                                font-family: 'Noto Sans KR', sans-serif;
                                 &:hover {
                                     width: 100%;
                                     background: #eeeeee;
                                 }
+                            }
+                        }
+                        .submenu__account-upper {
+                            border-bottom: 0.5px solid var(--border-color);
+                            li {
+                                padding-bottom: 0.5rem;
                             }
                         }
                     }
