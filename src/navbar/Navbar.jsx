@@ -8,9 +8,12 @@ import { IoMenuOutline } from 'react-icons/io5'
 import { motion, AnimatePresence } from 'framer-motion'
 const Navbar = () => {
     const [accountOpen, setAccountOpen] = useState(false)
-
+    const [languageOpen, setLanguageOpen] = useState(false)
     const handleAccontOpen = () => {
         setAccountOpen(!accountOpen)
+    }
+    const handleLanguageOpen = () => {
+        setLanguageOpen(!languageOpen)
     }
 
 
@@ -33,8 +36,19 @@ const Navbar = () => {
                     <div className="nbr__container">
                         <div className="nbr__buttons">
                             <button className='navbar__button'>Venue Your Place</button>
-                            <button className='navbar__button'>
+                            <button className='navbar__button' onClick={handleLanguageOpen}>
                                 <FiGlobe className='navbar__button-icon' />
+                                <AnimatePresence>
+                                    {languageOpen && (
+                                        <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.2 }} className="nbr__language-dropdown" >
+                                            <ul className='submenu__language'>
+                                                <li>English</li>
+                                                <li>French</li>
+                                                <li>Spanish</li>
+                                            </ul>
+                                        </motion.div>
+                                    )}
+                                </AnimatePresence>
                             </button>
                         </div>
                         <div className="nbr__account" onClick={handleAccontOpen}>

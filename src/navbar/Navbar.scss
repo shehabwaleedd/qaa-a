@@ -104,7 +104,69 @@
                     align-items: center;
                     justify-content: space-between;
                     width: 100%;
-
+                    position: relative;
+                    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+                    .nbr__language-dropdown {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+                        gap: 0.5rem;
+                        position: absolute;
+                        top: 3rem;
+                        left: 0rem;
+                        width: 10vw;
+                        height: 20vh;
+                        background-color: var(--background-color);
+                        border: 1px solid var(--border-color);
+                        border-radius: 0.5rem;
+                        padding: 1rem;
+                        z-index: 200;
+                        ul {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            justify-content: center;
+                            gap: 0.5rem;
+                            width: 100%;
+                            height: 100%;
+                            position: relative;
+                            font-weight: 400;
+                            font-family: 'Noto Sans KR', sans-serif;
+                            li {
+                                display: flex;
+                                align-items: center;
+                                justify-content: flex-start;
+                                gap: 0.5rem;
+                                width: 100%;
+                                height: 100%;
+                                padding: 0 0.5rem;
+                                cursor: pointer;
+                                font-size: 0.9rem;
+                                font-weight: 400;
+                                font-family: 'Noto Sans KR', sans-serif;
+                                &:hover {
+                                    width: 100%;
+                                    background: #eeeeee;
+                                    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+                                }
+                            }
+                        }
+                        .submenu__language-upper {
+                            border-bottom: 0.1rem solid var(--border-color);
+                            padding-bottom: 0.5rem;
+                            margin-bottom: 0.5rem;
+                            font-weight: 500;
+                            font-family: 'Noto Sans KR', sans-serif;
+                        }
+                        .submenu__language-lower {
+                            border-top: 0.1rem solid var(--border-color);
+                            padding-top: 0.5rem;
+                            margin-top: 0.5rem;
+                            font-weight: 500;
+                            font-family: 'Noto Sans KR', sans-serif;
+                        }
+                    }
                     button {
                         font-family: "Noto Sans KR", sans-serif;
                         font-size: 0.9rem;
@@ -135,6 +197,7 @@
                     }
 
                     &:hover {
+                        transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
                         box-shadow: 0.1rem 0.1rem 0 0.1rem var(--border-color);
                     }
                     .nbr__account-dropdown {
@@ -178,6 +241,7 @@
                                 font-family: 'Noto Sans KR', sans-serif;
                                 &:hover {
                                     width: 100%;
+                                    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
                                     background: #eeeeee;
                                 }
                             }
