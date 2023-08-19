@@ -64,20 +64,21 @@
                 font-family: 'Noto Sans KR', sans-serif;
                 color: var(--title-color);
                 border-right: 1px solid var(--border-color);
-                padding-right: 0.3rem;
+                padding-right: 0.15rem;
                 letter-spacing: 0.1rem;
             }
             p {
                 font-size: 0.9rem;
-                font-weight: 600;
+                font-weight: 500;
                 font-family: 'Noto Sans KR', sans-serif;
-                color: var(--title-color);
+                color: var(--text-color);
                 letter-spacing: 0.1rem;
             }
             .navbar__search {
                 position: relative;
                 background-color: var(--accent-color);
-                padding: 0.7rem;
+                padding: 0.6rem;
+                right: 0.1rem;
                 border-radius: 2rem;
                 color: var(--container-color);
             }
@@ -89,8 +90,50 @@
             justify-content: flex-end;
             cursor: pointer;
             position: relative;
-            right: 0;
+            right: 2rem;
             width: 100%;
+
+            .nbr__container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                height: 100%;
+                .nbr__buttons {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+                    button {
+                        font-family: "Noto Sans KR", sans-serif;
+                        font-size: 0.9rem;
+                        font-weight: 500;
+                        color: var(--title-color);
+                    }
+                }
+                .nbr__account {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1rem;
+                    height: 100%;
+                    width: 33%;
+                    border: 1px solid var(--border-color);
+                    border-radius: 2rem;
+                    padding: 0rem 1rem;
+                    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+                    .navbar__account-icon {
+                        height: 2em;
+                        width: 2rem;
+                        object-fit: cover;
+                        border-radius: 50%;
+                    }
+                    &:hover {
+                        box-shadow: 0.1rem 0.1rem 0 0.1rem var(--border-color);
+                    }
+                }
+            }
         }
     }
 
